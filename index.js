@@ -12,3 +12,8 @@ function deleteFromObjectByKey(object, key) {
   delete copy[key]
   return copy
 }
+
+var destructivelyDeleteFromObjectByKey = (object, key) => {
+  delete object[key]
+  return object
+}
